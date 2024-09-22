@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Freedom Threads</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="itemdetails-container">
+        <div class="itemdetails-itemdetails">
+          <div class="itemdetails-frame7115">
+            <div class="itemdetails-header">
+              <div class="itemdetails-logo1">
+                <span class="itemdetails-text10">
+                  <span>Freedom</span>
+                  <br />
+                  <span>Threads</span>
+                </span>
+              </div>
+              <div class="itemdetails-navigation-pill-list">
+                <span class="shop-text104"><a href="men.html"><span>Men</span></a></span>
+                <span class="shop-text106"><a href="women.html"><span>Women</span></a></span>
+                <span class="shop-text107"><a href="orders.html"><span>Orders</span></a></span>
+              </div>
+              <div class="itemdetails-frame7122">
+                <div class="itemdetails-search1">
+                  <span class="itemdetails-text20 SingleLineBodyBase">
+                    <input type="text" id="search_product_by_name" placeholder="Search">
+                  </span>
+                  <img
+                    src="public/external/searchi149-vynq.svg"
+                    alt="SearchI149"
+                    class="itemdetails-search2"
+                  />
+                </div>
+              </div>
+              <div class="itemdetails-frame7129">
+                <a href="wishlist.html"><img
+                  src="public/external/heart9016-cjrv.svg"
+                  alt="Heart9016"
+                  class="home-page-heart"
+                /></a>
+                <a href="cart.html"><img
+                  src="public/external/shoppingbag9016-bm4t.svg"
+                  alt="Shoppingbag9016"
+                  class="home-page-shoppingbag"
+                /></a>
+                <a href="profile.html"><img
+                  src="public/external/user9016-02ms.svg"
+                  alt="User9016"
+                  class="home-page-user"
+                /></a>
+              </div>
+            </div>
+            <div class="itemdetails-product-detail">
+              <div class="itemdetails-divwfull">
+                <div class="itemdetails-mediagallery">
+                  <div class="itemdetails-divswipercontainer">
+                    <img
+                      src="public/external/basicwardrobeessentials1506-l11-500w.png"
+                      alt="Basicwardrobeessentials1506"
+                      class="itemdetails-basicwardrobeessentials1"
+                    />
+                  </div>
+                  <div class="itemdetails-divsfmedianav">
+                    <div class="itemdetails-divswiperwrapper">
+                      <div class="itemdetails-divswiperslide1">
+                        <div class="itemdetails-divsfprodmedia">
+                          <img
+                            src="public/external/basicwardrobeessentials1506-ttqk-200w.png"
+                            alt="Basicwardrobeessentials1506"
+                            class="itemdetails-basicwardrobeessentials2"
+                          />
+                        </div>
+                      </div>
+                      <div class="itemdetails-divswiperslide2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="itemdetails-details1"></div>
+              <div class="itemdetails-details2">
+                <div class="itemdetails-title">
+                  <button class="itemdetails-button1">
+                    <img
+                      src="public/external/svg1492-gll.svg"
+                      alt="SVG1492"
+                      class="itemdetails-svg1"
+                    />
+                  </button>
+                </div>
+                <span class="itemdetails-text22">
+                  <span>Linen Plain Top</span>
+                </span>
+                <div class="itemdetails-price">
+                  <div class="itemdetails-divfpricesale">
+                    <div class="itemdetails-spanfpriceitem">
+                      <span class="itemdetails-text24">
+                        <span>₹250.00</span>
+                      </span>
+                    </div>
+                    <div class="itemdetails-strikethrough"></div>
+                  </div>
+                </div>
+                <div class="itemdetails-size-and-color">
+                  <button class="itemdetails-variantbutton">
+                    <div class="itemdetails-label10">
+                      <span class="itemdetails-text26">
+                        <span class="itemdetails-text27">Size:</span>
+                        <span>M</span>
+                      </span>
+                    </div>
+                    <div class="itemdetails-label11">
+                      <span class="itemdetails-text29">M</span>
+                    </div>
+                    <div class="itemdetails-label12">
+                      <span class="itemdetails-text30">L</span>
+                    </div>
+                    <div class="itemdetails-label13">
+                      <span class="itemdetails-text31"><span>XL</span></span>
+                    </div>
+                    <div class="itemdetails-label14">
+                      <span class="itemdetails-text33"><span>XXL</span></span>
+                    </div>
+                    <div class="itemdetails-label15">
+                      <span class="itemdetails-text35">S</span>
+                    </div>
+                  </button>
+                  <div class="itemdetails-variantcolor">
+                    <div class="itemdetails-divprodoptionlabel">
+                      <div class="itemdetails-label16">
+                        <span class="itemdetails-text36">
+                          <span class="itemdetails-text37">Color:</span>
+                          <span>Blue</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="itemdetails-divprodoption">
+                      <div class="itemdetails-label17"></div>
+                      <div class="itemdetails-label18"></div>
+                      <div class="itemdetails-label19"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="itemdetails-quantity">
+                  <span class="itemdetails-text39"><span>Quantity</span></span>
+                  <div class="itemdetails-divflex">
+                    <div class="itemdetails-quantityinput">
+                      <button
+                        class="itemdetails-button-decreasequantityof-denim-jacketbyone"
+                      >
+                        <img
+                          src="public/external/svg1493-bgkg.svg"
+                          alt="SVG1493"
+                          class="itemdetails-svg2"
+                        />
+                      </button>
+                      <div class="itemdetails-input-productquantity">
+                        <div class="itemdetails-div">
+                          <span class="itemdetails-text41">1</span>
+                        </div>
+                      </div>
+                      <button
+                        class="itemdetails-button-increasequantityof-denim-jacketbyone"
+                      >
+                        <img
+                          src="public/external/svg1493-hn2.svg"
+                          alt="SVG1493"
+                          class="itemdetails-svg3"
+                        />
+                      </button>
+                    </div>
+                    <button class="itemdetails-button2">
+                      <span class="itemdetails-text42">
+                        <a href="cart.html"><span id="send1">Add to cart</span></a>
+                      </span>
+                    </button>
+                    <div class="itemdetails-info">
+                      <div class="itemdetails-item1">
+                        <img
+                          src="public/external/svg1493-dlih.svg"
+                          alt="SVG1493"
+                          class="itemdetails-svg4"
+                        />
+                        <div class="itemdetails-p1">
+                          <span class="itemdetails-text44">
+                            <span>Estimated Delivery:</span>
+                          </span>
+                          <span class="itemdetails-text46">
+                            <span>Jul 30 - Aug 03</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="itemdetails-item2">
+                        <img
+                          src="public/external/svg1493-mflc.svg"
+                          alt="SVG1493"
+                          class="itemdetails-svg5"
+                        />
+                        <div class="itemdetails-p2">
+                          <span class="itemdetails-text48">
+                            <span class="itemdetails-text49">
+                              Free Shipping &amp; Returns:
+                            </span>
+                            <span>On all orders over ₹450.00</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="itemdetails-footer">
+              <div class="itemdetails-group66">
+                <div class="itemdetails-frame19">
+                  <div class="itemdetails-group14">
+                    <span class="itemdetails-text51"><span>Careers</span></span>
+                    <span class="itemdetails-text53">
+                      <span>Contact us</span>
+                    </span>
+                    <span class="itemdetails-text55"><span>Support</span></span>
+                    <span class="itemdetails-text57"><span>Company</span></span>
+                    <span class="itemdetails-text59"><span>About</span></span>
+                  </div>
+                  <div class="itemdetails-group15">
+                    <span class="itemdetails-text61">
+                      <span>Quick Link</span>
+                    </span>
+                    <span class="itemdetails-text63"><span>FAQs</span></span>
+                    <span class="itemdetails-text65">
+                      <span>Size Guide</span>
+                    </span>
+                    <span class="itemdetails-text67">
+                      <span>Orders Tracking</span>
+                    </span>
+                    <span class="itemdetails-text69">
+                      <span>Share Location</span>
+                    </span>
+                  </div>
+                  <div class="itemdetails-group16">
+                    <span class="itemdetails-text71">
+                      <span>Privacy Policy</span>
+                    </span>
+                    <span class="itemdetails-text73">
+                      <span>Terms &amp; conditions</span>
+                    </span>
+                    <span class="itemdetails-text75"><span>Legal</span></span>
+                  </div>
+                </div>
+                <div class="itemdetails-frame45">
+                  <div class="itemdetails-logo2">
+                    <span class="itemdetails-text77">
+                      <span>Freedom</span>
+                      <br />
+                      <span>Threads</span>
+                    </span>
+                  </div>
+                  <div class="itemdetails-frame18">
+                    <div class="itemdetails-group10">
+                      <img
+                        src="public/external/vector1496-4gyd.svg"
+                        alt="Vector1496"
+                        class="itemdetails-vector1"
+                      />
+                    </div>
+                    <div class="itemdetails-group11">
+                      <img
+                        src="public/external/vector1496-sfmc.svg"
+                        alt="Vector1496"
+                        class="itemdetails-vector2"
+                      />
+                    </div>
+                    <div class="itemdetails-group12">
+                      <img
+                        src="public/external/vector1496-4dcn.svg"
+                        alt="Vector1496"
+                        class="itemdetails-vector3"
+                      />
+                    </div>
+                    <div class="itemdetails-group13">
+                      <span class="itemdetails-text81"><span>in</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="itemdetails-community">
+              <div class="itemdetails-group64">
+                <span class="itemdetails-text83">
+                  <span>JOIN the COMMUNITY to get MONTHLY PROMO</span>
+                </span>
+                <span class="itemdetails-text85">
+                  <span>
+                    Type your email down below and be young wild generation
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="itemdetails-textfield">
+              <button class="itemdetails-button3">
+                <span class="itemdetails-text87"><span>Send</span></span>
+              </button>
+              <span class="itemdetails-text89">
+                <span>Your email address</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById('send1').addEventListener('click', function() {
+    this.textContent = 'Added to cart';
+});
+    </script>
+  </body>
+</html>

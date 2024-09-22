@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Freedom Threads</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="checkout-container1">
+        <div class="checkout-checkout">
+          <div class="checkout-frame7115">
+            <div class="checkout-header">
+              <div class="checkout-logo1">
+                <span class="checkout-text10">
+                  <span>Freedom</span>
+                  <br />
+                  <span>Threads</span>
+                </span>
+              </div>
+              <div class="checkout-navigation-pill-list">
+                <span class="shop-text104"><a href="men.html"><span>Men</span></a></span>
+                <span class="shop-text106"><a href="women.html"><span>Women</span></a></span>
+                <span class="shop-text107"><a href="orders.html"><span>Orders</span></a></span>
+              </div>
+              <div class="checkout-container2">
+                <div class="checkout-container3">
+                  <div class="checkout-container4">
+                    <div class="checkout-frame7122"></div>
+                  </div>
+                  <div class="cart-frame7122">
+                    <div class="cart-search1">
+                      <span class="cart-text20 SingleLineBodyBase">
+                        <input type="text" id="search_product_by_name" placeholder="Search">
+                      </span>
+                      <img
+                        src="public/external/searchi151-vxy.svg"
+                        alt="SearchI151"
+                        class="cart-search2"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout-frame7129">
+                <a href="wishlist.html"><img
+                  src="public/external/heart9016-cjrv.svg"
+                  alt="Heart9016"
+                  class="home-page-heart"
+                /></a>
+                <a href="cart.html"><img
+                  src="public/external/shoppingbag9016-bm4t.svg"
+                  alt="Shoppingbag9016"
+                  class="home-page-shoppingbag"
+                /></a>
+                <a href="profile.html"><img
+                  src="public/external/user9016-02ms.svg"
+                  alt="User9016"
+                  class="home-page-user"
+                /></a>
+              </div>
+            </div>
+            <div class="checkout-footer">
+              <div class="checkout-group66">
+                <div class="checkout-frame19">
+                  <div class="checkout-group14">
+                    <span class="checkout-text20"><span>Careers</span></span>
+                    <span class="checkout-text22"><span>Contact us</span></span>
+                    <span class="checkout-text24"><span>Support</span></span>
+                    <span class="checkout-text26"><span>Company</span></span>
+                    <span class="checkout-text28"><span>About</span></span>
+                  </div>
+                  <div class="checkout-group15">
+                    <span class="checkout-text30"><span>Quick Link</span></span>
+                    <span class="checkout-text32"><span>FAQs</span></span>
+                    <span class="checkout-text34"><span>Size Guide</span></span>
+                    <span class="checkout-text36">
+                      <span>Orders Tracking</span>
+                    </span>
+                    <span class="checkout-text38">
+                      <span>Share Location</span>
+                    </span>
+                  </div>
+                  <div class="checkout-group16">
+                    <span class="checkout-text40">
+                      <span>Privacy Policy</span>
+                    </span>
+                    <span class="checkout-text42">
+                      <span>Terms &amp; conditions</span>
+                    </span>
+                    <span class="checkout-text44"><span>Legal</span></span>
+                  </div>
+                </div>
+                <div class="checkout-frame45">
+                  <div class="checkout-logo2">
+                    <span class="checkout-text46">
+                      <span>Freedom</span>
+                      <br />
+                      <span>Threads</span>
+                    </span>
+                  </div>
+                  <div class="checkout-frame18">
+                    <div class="checkout-group10">
+                      <img
+                        src="public/external/vector1602-oeo.svg"
+                        alt="Vector1602"
+                        class="checkout-vector1"
+                      />
+                    </div>
+                    <div class="checkout-group11">
+                      <img
+                        src="public/external/vector1602-uy8m.svg"
+                        alt="Vector1602"
+                        class="checkout-vector2"
+                      />
+                    </div>
+                    <div class="checkout-group12">
+                      <img
+                        src="public/external/vector1602-xn6.svg"
+                        alt="Vector1602"
+                        class="checkout-vector3"
+                      />
+                    </div>
+                    <div class="checkout-group13">
+                      <span class="checkout-text50"><span>in</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="checkout-community">
+              <div class="checkout-group64">
+                <span class="checkout-text52">
+                  <span>JOIN the COMMUNITY to get MONTHLY PROMO</span>
+                </span>
+                <span class="checkout-text54">
+                  <span>
+                    Type your email down below and be young wild generation
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="checkout-textfield">
+              <button class="checkout-button1">
+                <span class="checkout-text56 SingleLineBodyBase">
+                  <span>Send</span>
+                </span>
+              </button>
+              <span class="checkout-text58">
+                <span>Your email address</span>
+              </span>
+            </div>
+            <img
+              src="public/external/seperator1601-v7t.svg"
+              alt="Seperator1601"
+              class="checkout-seperator"
+            />
+            <div class="checkout-contact">
+              <span class="checkout-text60"><span>Contact</span></span>
+              <div class="checkout-email">
+                <span class="checkout-text62"><input type="text" placehoder="Email Address"></span>
+              </div>
+            </div>
+            <div class="checkout-cart-products">
+              <img
+                src="public/external/bg1601-bxm6-900w.png"
+                alt="BG1601"
+                class="checkout-bg1"
+              />
+              <div class="checkout-prooduct">
+                <div class="checkout-products-info">
+                  <div class="checkout-pricing">
+                    <span class="checkout-text67"><span>Subtotal</span></span>
+                    <span class="checkout-text69"><span>Shipping</span></span>
+                    <span class="checkout-text71"><span>Total</span></span>
+                    <span class="checkout-text73"><span>₹250.00</span></span>
+                    <span class="checkout-text75"><span>₹10.00</span></span>
+                    <span class="checkout-text77"><span>₹260.00</span></span>
+                  </div>
+                  <span class="checkout-text79">
+                    <span>Linen Plain Top</span>
+                  </span>
+                  <img
+                    src="public/external/rectangle192651601-bzp-200h.png"
+                    alt="Rectangle192651601"
+                    class="checkout-rectangle19265"
+                  />
+                  <span class="checkout-text81"><span>Pink</span></span>
+                  <span class="checkout-text83"><span>₹250.00</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="checkout-delivery">
+              <span class="checkout-text85"><span>Delivery</span></span>
+              <div class="checkout-country">
+                <span class="checkout-text87">
+                  <input type="text" placehoder="Address">
+                </span>
+              </div>
+              <div class="checkout-first-name">
+                <span class="checkout-text89"><span>First Name</span></span>
+              </div>
+              <div class="checkout-city">
+                <span class="checkout-text91"><span>City</span></span>
+              </div>
+              <div class="checkout-address">
+                <span class="checkout-text93"><span>Address</span></span>
+              </div>
+              <div class="checkout-last-name">
+                <span class="checkout-text95"><span>Last Name</span></span>
+              </div>
+              <div class="checkout-postal-code">
+                <span class="checkout-text97"><span>Postal Code</span></span>
+              </div>
+              <div class="checkout-checkbox">
+                <span class="checkout-text99">
+                  <span>Save This Info for future</span>
+                </span>
+                <img
+                  src="public/external/rectangle192631601-5dkp-200h.png"
+                  alt="Rectangle192631601"
+                  class="checkout-rectangle19263"
+                />
+              </div>
+            </div>
+            <div class="checkout-payment">
+              <span class="checkout-text101"><span>Payment</span></span>
+              <div class="checkout-credit-card-info">
+                <img
+                  src="public/external/bg1601-0nq5b-400h.png"
+                  alt="BG1601"
+                  class="checkout-bg2"
+                />
+                <div class="checkout-payment-type">
+                  <span class="checkout-text103">
+                    <span>Cash on Delivery</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="checkout-button2">
+              <a href="orderconfirm.html"><span class="checkout-text105"><span>Confirm</span></a>
+            </div>
+            <img
+              src="public/external/basicwardrobeessentials1611-eqij-200w.png"
+              alt="Basicwardrobeessentials1611"
+              class="checkout-basicwardrobeessentials"
+            />
+            <img
+              src="public/external/ellipse71611-bfar-200h.png"
+              alt="Ellipse71611"
+              class="checkout-ellipse7"
+            />
+            <span class="checkout-text107">1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

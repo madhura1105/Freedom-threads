@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Freedom Threads</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="wishlist-container">
+        <div class="wishlist-wishlist">
+          <div class="wishlist-frame7115">
+            <div class="wishlist-header">
+              <div class="wishlist-logo1">
+                <span class="wishlist-text100">
+                  <span>Freedom</span>
+                  <br />
+                  <span>Threads</span>
+                </span>
+              </div>
+              <div class="wishlist-navigation-pill-list">
+                <span class="shop-text104"><a href="men.html"><span>Men</span></a></span>
+                <span class="shop-text106"><a href="women.html"><span>Women</span></a></span>
+                <span class="shop-text107"><a href="orders.html"><span>Orders</span></a></span>
+              </div>
+              <div class="wishlist-frame7122"></div>
+              <div class="wishlist-frame7129">
+                <a href="wishlist.html"><img
+                  src="public/external/heart9016-cjrv.svg"
+                  alt="Heart9016"
+                  class="home-page-heart"
+                /></a>
+                <a href="cart.html"><img
+                  src="public/external/shoppingbag9016-bm4t.svg"
+                  alt="Shoppingbag9016"
+                  class="home-page-shoppingbag"
+                /></a>
+                <a href="profile.html"><img
+                  src="public/external/user9016-02ms.svg"
+                  alt="User9016"
+                  class="home-page-user"
+                /></a>
+              </div>
+            </div>
+            <div class="wishlist-divsfpcard1">
+              <div class="wishlist-linkresponsiveimage1">
+                <img
+                  src="public/external/image46145a4ab07b97409ab0493768fd0e7a10jpg1604-vpad-400w.png"
+                  alt="IMAGE46145a4ab07b97409ab0493768fd0e7a10jpg1604"
+                  class="wishlist-image46145a4ab07b97409ab0493768fd0e7a10jpg"
+                />
+                <div class="wishlist-spanprodtag1">
+                  <span class="wishlist-text110">
+                    <span>Sold</span>
+                    <br />
+                    <span>Out</span>
+                  </span>
+                </div>
+              </div>
+              <div class="wishlist-divmt31">
+                <div class="wishlist-heading3-link1">
+                  <span class="wishlist-text114">
+                    <span>Linen-blend Shirt</span>
+                  </span>
+                </div>
+                <div class="wishlist-divfpricesale1">
+                  <div class="wishlist-spanfpriceitem1">
+                    <span class="wishlist-text116"><span>₹350.00</span></span>
+                  </div>
+                  <div class="wishlist-strikethrough1">
+                    <span class="wishlist-text118"><span>₹450.00</span></span>
+                  </div>
+                </div>
+                <div class="wishlist-pcardswatchswatchcolor1">
+                  <div class="wishlist-divsftooltipitem10">
+                    <div class="wishlist-divproductoptionitem10"></div>
+                  </div>
+                  <div class="wishlist-divsftooltipitem11">
+                    <div class="wishlist-divproductoptionitem11"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wishlist-side-menu">
+              <div class="wishlist-all-details">
+                <div class="wishlist-personal-information">
+                  <div class="wishlist-frame1000001077">
+                    <div class="wishlist-hugeiconuseroutlineuser">
+                      <img
+                        src="public/external/ellipse255i162-g4uj-200h.png"
+                        alt="Ellipse255I162"
+                        class="wishlist-ellipse255"
+                      />
+                      <img
+                        src="public/external/ellipse257i162-rr1-200h.png"
+                        alt="Ellipse257I162"
+                        class="wishlist-ellipse257"
+                      />
+                    </div>
+                    <span class="wishlist-text120 Body-1Regular">
+                      <a href="profile.html"><span>Profile</span></a>
+                    </span>
+                  </div>
+                </div>
+                <div class="wishlist-my-orders1">
+                  <div class="wishlist-frame10000010801">
+                    <a href="orders.html"><img
+                      src="public/external/hugeiconshippinganddeliveryoutlinepackagebox071621-0w8.svg"
+                      alt="hugeiconshippinganddeliveryoutlinepackagebox071621"
+                      class="wishlist-hugeiconshippinganddeliveryoutlinepackagebox07"
+                    /></a>
+                    <span class="wishlist-text122 Body-1Regular">
+                      <a href="orders.html"><span>My Orders</span></a>
+                    </span>
+                  </div>
+                </div>
+                <div class="wishlist-my-orders2">
+                  <div class="wishlist-frame10000010802">
+                    <a href="wishlist.html"><img
+                      src="public/external/hugeiconhealthoutlineheart1621-jw9r.svg"
+                      alt="hugeiconhealthoutlineheart1621"
+                      class="wishlist-hugeiconhealthoutlineheart"
+                    /></a>
+                    <span class="wishlist-text124 Body-1Regular">
+                      <a href="wishlist.html"><span>My Wishlists</span></a>
+                    </span>
+                  </div>
+                </div>
+                <div class="wishlist-settings">
+                  <div class="wishlist-frame1000001082">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wishlist-products">
+            <div class="wishlist-product01">
+              <div class="wishlist-divsfpcard2">
+                <div class="wishlist-linkresponsiveimage2">
+                  <img
+                    src="public/external/image49ecfb9d65a39240b1b9fbf62e5a84f812jpg1605-u9me-400w.png"
+                    alt="IMAGE49ecfb9d65a39240b1b9fbf62e5a84f812jpg1605"
+                    class="wishlist-image49ecfb9d65a39240b1b9fbf62e5a84f812jpg"
+                  />
+                  <img
+                    src="public/external/basickhakitshirt1605-7jls-700h.png"
+                    alt="Basickhakitshirt1605"
+                    class="wishlist-basickhakitshirt"
+                  />
+                  <div class="wishlist-spanprodtag2">
+                    <span class="wishlist-text128">Sold out</span>
+                  </div>
+                </div>
+                <div class="wishlist-divmt32">
+                  <div class="wishlist-heading3-link2">
+                    <span class="wishlist-text129">
+                      <span>Linen Plain Top</span>
+                    </span>
+                  </div>
+                  <span class="wishlist-text131"><span>₹250.00</span></span>
+                  <div class="wishlist-pcardswatchswatchcolor2">
+                    <div class="wishlist-divsftooltipitem12">
+                      <div class="wishlist-divproductoptionitem12"></div>
+                    </div>
+                    <div class="wishlist-divsftooltipitem13">
+                      <div class="wishlist-divproductoptionitem13"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wishlist-product02">
+              <div class="wishlist-divsfpcard3">
+                <div class="wishlist-divoverflowhidden">
+                  <div class="wishlist-linkresponsiveimage3">
+                    <img
+                      src="public/external/image57jpg1605-wndt-400w.png"
+                      alt="IMAGE57jpg1605"
+                      class="wishlist-image57jpg"
+                    />
+                  </div>
+                </div>
+                <div class="wishlist-divmt33">
+                  <div class="wishlist-heading3-link3">
+                    <span class="wishlist-text133">
+                      <span>Linen-blend Shirt</span>
+                    </span>
+                  </div>
+                  <span class="wishlist-text135"><span>₹350.00</span></span>
+                  <div class="wishlist-pcardswatchswatchcolor3">
+                    <div class="wishlist-divsftooltipitem14">
+                      <div class="wishlist-divproductoptionitem14"></div>
+                    </div>
+                    <div class="wishlist-divsftooltipitem15">
+                      <div class="wishlist-divproductoptionitem15"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wishlist-product03">
+              <div class="wishlist-divsfpcard4">
+                <div class="wishlist-linkresponsiveimage4">
+                  <img
+                    src="public/external/image59jpg1605-a0a-400w.png"
+                    alt="IMAGE59jpg1605"
+                    class="wishlist-image59jpg"
+                  />
+                  <img
+                    src="public/external/basicwardrobeessentials1605-bojd-700h.png"
+                    alt="Basicwardrobeessentials1605"
+                    class="wishlist-basicwardrobeessentials1"
+                  />
+                </div>
+                <div class="wishlist-divmt34">
+                  <div class="wishlist-heading3-link4">
+                    <span class="wishlist-text137">
+                      <span>Linen Plain Top</span>
+                    </span>
+                  </div>
+                  <span class="wishlist-text139"><span>₹250.00</span></span>
+                  <div class="wishlist-pcardswatchswatchcolor4">
+                    <div class="wishlist-divsftooltipitem16">
+                      <div class="wishlist-divproductoptionitem16"></div>
+                    </div>
+                    <div class="wishlist-divsftooltipitem17">
+                      <div class="wishlist-divproductoptionitem17"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wishlist-product04">
+              <div class="wishlist-divsfpcard5">
+                <div class="wishlist-linkresponsiveimage5">
+                  <img
+                    src="public/external/image548558553ca9dd4474bc2b6707343dacbejpg1605-ferj-400w.png"
+                    alt="IMAGE548558553ca9dd4474bc2b6707343dacbejpg1605"
+                    class="wishlist-image548558553ca9dd4474bc2b6707343dacbejpg"
+                  />
+                  <img
+                    src="public/external/basicisalwaysintrend1605-4k0r-700h.png"
+                    alt="Basicisalwaysintrend1605"
+                    class="wishlist-basicisalwaysintrend"
+                  />
+                </div>
+                <div class="wishlist-divmt35">
+                  <div class="wishlist-heading3-link5">
+                    <span class="wishlist-text141">
+                      <span>Linen Plain Top</span>
+                    </span>
+                  </div>
+                  <span class="wishlist-text143"><span>₹250.00</span></span>
+                  <div class="wishlist-pcardswatchswatchcolor5">
+                    <div class="wishlist-divsftooltipitem18">
+                      <div class="wishlist-divproductoptionitem18"></div>
+                    </div>
+                    <div class="wishlist-divsftooltipitem19">
+                      <div class="wishlist-divproductoptionitem19"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wishlist-product05">
+              <div class="wishlist-divsfpcard6">
+                <div class="wishlist-linkresponsiveimage6">
+                  <img
+                    src="public/external/image53bc12317de94140979fd8cc529c2b0cf1jpg1605-7hws-400w.png"
+                    alt="IMAGE53bc12317de94140979fd8cc529c2b0cf1jpg1605"
+                    class="wishlist-image53bc12317de94140979fd8cc529c2b0cf1jpg"
+                  />
+                  <img
+                    src="public/external/basicclothes1605-st99-700h.png"
+                    alt="Basicclothes1605"
+                    class="wishlist-basicclothes"
+                  />
+                </div>
+                <div class="wishlist-divmt36">
+                  <div class="wishlist-heading3-link6">
+                    <span class="wishlist-text145">
+                      <span>Linen Plain Top</span>
+                    </span>
+                  </div>
+                  <span class="wishlist-text147"><span>₹250.00</span></span>
+                  <div class="wishlist-pcardswatchswatchcolor6">
+                    <div class="wishlist-divsftooltipitem20">
+                      <div class="wishlist-divproductoptionitem20"></div>
+                    </div>
+                    <div class="wishlist-divsftooltipitem21">
+                      <div class="wishlist-divproductoptionitem21"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wishlist-product06">
+              <div class="wishlist-divsfpcard7">
+                <div class="wishlist-linkresponsiveimage7">
+                  <img
+                    src="public/external/image52bec0360d64e54b79bb889b2dc30f34a2jpg1605-dl4-400w.png"
+                    alt="IMAGE52bec0360d64e54b79bb889b2dc30f34a2jpg1605"
+                    class="wishlist-image52bec0360d64e54b79bb889b2dc30f34a2jpg"
+                  />
+                  <img
+                    src="public/external/basicwardrobeessentials1606-w0eo-700h.png"
+                    alt="Basicwardrobeessentials1606"
+                    class="wishlist-basicwardrobeessentials2"
+                  />
+                </div>
+                <div class="wishlist-divmt37">
+                  <div class="wishlist-heading3-link7">
+                    <span class="wishlist-text149">
+                      <span>Oversized T-shirt</span>
+                    </span>
+                  </div>
+                  <div class="wishlist-divfpricesale2">
+                    <div class="wishlist-spanfpriceitem2">
+                      <span class="wishlist-text151"><span>₹250.00</span></span>
+                    </div>
+                    <div class="wishlist-strikethrough2">
+                      <span class="wishlist-text153"><span>₹350.00</span></span>
+                    </div>
+                  </div>
+                  <div class="wishlist-pcardswatchswatchcolor7">
+                    <div class="wishlist-divsftooltipitem22">
+                      <div class="wishlist-divproductoptionitem22"></div>
+                    </div>
+                    <div class="wishlist-divsftooltipitem23">
+                      <div class="wishlist-divproductoptionitem23"></div>
+                    </div>
+                    <div class="wishlist-divsftooltipitem24">
+                      <div class="wishlist-divproductoptionitem24"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wishlist-product07"></div>
+            <div class="wishlist-product08">
+              <div class="wishlist-divsfpcard8">
+                <div class="wishlist-linkresponsiveimage8">
+                  <img
+                    src="public/external/image45jpg1606-e36d-400w.png"
+                    alt="IMAGE45jpg1606"
+                    class="wishlist-image45jpg"
+                  />
+                  <img
+                    src="public/external/basicwardrobeessentials1606-i74o-700h.png"
+                    alt="Basicwardrobeessentials1606"
+                    class="wishlist-basicwardrobeessentials3"
+                  />
+                </div>
+                <div class="wishlist-divmt38">
+                  <div class="wishlist-heading3-link8">
+                    <span class="wishlist-text155">
+                      <span>Oversized T-shirt</span>
+                    </span>
+                  </div>
+                  <span class="wishlist-text157"><span>₹250.00</span></span>
+                  <div class="wishlist-pcardswatchswatchcolor8">
+                    <div class="wishlist-divsftooltipitem25">
+                      <div class="wishlist-divproductoptionitem25"></div>
+                    </div>
+                    <div class="wishlist-divsftooltipitem26">
+                      <div class="wishlist-divproductoptionitem26"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wishlist-product09">
+              <div class="wishlist-divsfpcard9">
+                <div class="wishlist-linkresponsiveimage9">
+                  <img
+                    src="public/external/image44df90161a71724fac869ac6af02c86d12jpg1606-rgip-400w.png"
+                    alt="IMAGE44df90161a71724fac869ac6af02c86d12jpg1606"
+                    class="wishlist-image44df90161a71724fac869ac6af02c86d12jpg"
+                  />
+                </div>
+                <div class="wishlist-divmt39">
+                  <div class="wishlist-heading3-link9">
+                    <span class="wishlist-text159">
+                      <span>Dotted Black Dress</span>
+                    </span>
+                  </div>
+                  <span class="wishlist-text161"><span>₹450.00</span></span>
+                  <div class="wishlist-pcardswatchswatchcolor9">
+                    <div class="wishlist-divsftooltipitem27">
+                      <div class="wishlist-divproductoptionitem27"></div>
+                    </div>
+                    <div class="wishlist-divsftooltipitem28">
+                      <div class="wishlist-divproductoptionitem28"></div>
+                    </div>
+                    <div class="wishlist-divsftooltipitem29">
+                      <div class="wishlist-divproductoptionitem29"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wishlist-footer">
+            <div class="wishlist-group66">
+              <div class="wishlist-frame19">
+                <div class="wishlist-group14">
+                  <span class="wishlist-text163"><span>Careers</span></span>
+                  <span class="wishlist-text165"><span>Contact us</span></span>
+                  <span class="wishlist-text167"><span>Support</span></span>
+                  <span class="wishlist-text169"><span>Company</span></span>
+                  <span class="wishlist-text171"><span>About</span></span>
+                </div>
+                <div class="wishlist-group15">
+                  <span class="wishlist-text173"><span>Quick Link</span></span>
+                  <span class="wishlist-text175"><span>FAQs</span></span>
+                  <span class="wishlist-text177"><span>Size Guide</span></span>
+                  <span class="wishlist-text179">
+                    <span>Orders Tracking</span>
+                  </span>
+                  <span class="wishlist-text181">
+                    <span>Share Location</span>
+                  </span>
+                </div>
+                <div class="wishlist-group16">
+                  <span class="wishlist-text183">
+                    <span>Privacy Policy</span>
+                  </span>
+                  <span class="wishlist-text185">
+                    <span>Terms &amp; conditions</span>
+                  </span>
+                  <span class="wishlist-text187"><span>Legal</span></span>
+                </div>
+              </div>
+              <div class="wishlist-frame45">
+                <div class="wishlist-logo2">
+                  <span class="wishlist-text189">
+                    <span>Freedom</span>
+                    <br />
+                    <span>Threads</span>
+                  </span>
+                </div>
+                <div class="wishlist-frame18">
+                  <div class="wishlist-group10">
+                    <img
+                      src="public/external/vector1606-84k4.svg"
+                      alt="Vector1606"
+                      class="wishlist-vector1"
+                    />
+                  </div>
+                  <div class="wishlist-group11">
+                    <img
+                      src="public/external/vector1606-gvjg.svg"
+                      alt="Vector1606"
+                      class="wishlist-vector2"
+                    />
+                  </div>
+                  <div class="wishlist-group12">
+                    <img
+                      src="public/external/vector1606-m6w.svg"
+                      alt="Vector1606"
+                      class="wishlist-vector3"
+                    />
+                  </div>
+                  <div class="wishlist-group13">
+                    <span class="wishlist-text193"><span>in</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wishlist-community">
+            <div class="wishlist-group64">
+              <span class="wishlist-text195">
+                <span>JOIN the COMMUNITY to get MONTHLY PROMO</span>
+              </span>
+              <span class="wishlist-text197">
+                <span>
+                  Type your email down below and be young wild generation
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="wishlist-textfield">
+            <button class="wishlist-button">
+              <span class="wishlist-text199 SingleLineBodyBase">
+                <span>Send</span>
+              </span>
+            </button>
+            <span class="wishlist-text201">
+              <span>Your email address</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

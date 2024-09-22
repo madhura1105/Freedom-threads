@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Freedom Threads</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="index.css" rel="stylesheet" />
+
+      <div class="home-page-container">
+        <div class="home-page-home-page">
+          <div class="home-page-frame7119">
+            <div class="home-page-frame7115">
+              <div class="home-page-header">
+                <div class="home-page-logo1">
+                  <span class="home-page-text100">
+                    <span>Freedom</span>
+                    <br />
+                    <span>Threads</span>
+                  </span>
+                </div>
+                <div class="home-page-navigation-pill-list">
+                  <span class="home-page-text104"><a href ="men.html"><span>Men</span></a></span>
+                  <span class="home-page-text106"><a href ="women.html"><span>Women</span></a></span>
+                  <span class="home-page-text108"><a href ="orders.html"><span>Orders</span></a></span>
+                </div>
+                <div class="home-page-frame7122">
+                  <div class="home-page-search1">
+                    <span class="home-page-text110 SingleLineBodyBase">
+                      <input type="text" id="search_product_by_name" placeholder="Search">
+                    </span>
+                    <img
+                      src="public/external/searchi901-5brb.svg"
+                      alt="SearchI901"
+                      class="home-page-search2"
+                    />
+                  </div>
+                </div>
+                <div class="home-page-frame7129">
+                  <a href="wishlist.html"><img
+                    src="public/external/heart9016-cjrv.svg"
+                    alt="Heart9016"
+                    class="home-page-heart"
+                  /></a>
+                  <a href="cart.html"><img
+                    src="public/external/shoppingbag9016-bm4t.svg"
+                    alt="Shoppingbag9016"
+                    class="home-page-shoppingbag"
+                  /></a>
+                  <a href="profile.html"><img
+                    src="public/external/user9016-02ms.svg"
+                    alt="User9016"
+                    class="home-page-user"
+                  /></a>
+                </div>
+              </div>
+              <div class="home-page-frame7121">
+                <div class="home-page-group69">
+                  <img
+                    src="public/external/rectangle39013-next-200h.png"
+                    alt="Rectangle39013"
+                    class="home-page-rectangle3"
+                  />
+                  <img
+                    src="public/external/rectangle69013-wz4g-200h.png"
+                    alt="Rectangle69013"
+                    class="home-page-rectangle6"
+                  />
+                  <span class="home-page-text114">
+                    <span>DISCOVER</span>
+                    <br />
+                    <span>YOUR</span>
+                    <br />
+                    <span>STYLE</span>
+                  </span>
+                  <span class="home-page-text120">
+                    <span>Live for Influential and Innovative fashion!</span>
+                  </span>
+                  <img
+                    src="public/external/star99013-a5l3.svg"
+                    alt="Star99013"
+                    class="home-page-star9"
+                  />
+                  <img
+                    src="public/external/star109013-61ec.svg"
+                    alt="Star109013"
+                    class="home-page-star10"
+                  />
+                  <img
+                    src="public/external/star119013-jht.svg"
+                    alt="Star119013"
+                    class="home-page-star11"
+                  />
+                  <img
+                    src="public/external/star129013-93zo.svg"
+                    alt="Star129013"
+                    class="home-page-star12"
+                  />
+                </div>
+                <div class="home-page-frame7123">
+                  <img
+                    src="public/external/frame109013-bal.svg"
+                    alt="Frame109013"
+                    class="home-page-frame10"
+                  />
+                </div>
+                <div class="home-page-group5795">
+                  <div class="home-page-group5796">
+                    <span class="home-page-text122"><span>SALE!</span></span>
+                    <span class="home-page-text124"><span>SALE!</span></span>
+                    <span class="home-page-text126"><span>SALE!</span></span>
+                    <span class="home-page-text128"><span>SALE!</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-page-frame7100">
+              <div class="home-page-frame7125">
+                <div class="home-page-product-info-card10">
+                  <div class="home-page-image10"></div>
+                  <div class="home-page-body10">
+                    <div class="home-page-frame712410">
+                      <div class="home-page-text130">
+                        <span class="home-page-text131">
+                          <span>Hoodies &amp; Sweatshirts</span>
+                        </span>
+                      </div>
+                      <div class="home-page-text-small1">
+                        <span class="home-page-text133">
+                          <span>Explore Now!</span>
+                        </span>
+                      </div>
+                    </div>
+                    <a href= "newarrivals.html"><img
+                      src="public/external/chevronleft9013-9t0b.svg"
+                      alt="Chevronleft9013"
+                      class="home-page-chevronleft1"
+                    /></a>
+                  </div>
+                </div>
+                <div class="home-page-product-info-card11">
+                  <div class="home-page-image11"></div>
+                  <div class="home-page-body11">
+                    <div class="home-page-frame712411">
+                      <div class="home-page-text135">
+                        <span class="home-page-text136">
+                          <span>Coats &amp; Blazers</span>
+                        </span>
+                      </div>
+                      <div class="home-page-text-small2">
+                        <span class="home-page-text138">
+                          <span>Explore Now!</span>
+                        </span>
+                      </div>
+                    </div>
+                    <a href= "newarrivals.html"><img
+                      src="public/external/chevronleft9013-jlja.svg"
+                      alt="Chevronleft9013"
+                      class="home-page-chevronleft2"
+                    /></a>
+                  </div>
+                </div>
+                <div class="home-page-product-info-card12">
+                  <div class="home-page-image12"></div>
+                  <div class="home-page-body12">
+                    <div class="home-page-frame712412">
+                      <div class="home-page-text140">
+                        <span class="home-page-text141">
+                          <span>T-shirts</span>
+                        </span>
+                      </div>
+                      <div class="home-page-text-small3">
+                        <span class="home-page-text143">
+                          <span>Explore Now!</span>
+                        </span>
+                      </div>
+                    </div>
+                    <a href= "newarrivals.html"><img
+                      src="public/external/chevronleft9013-lm9l.svg"
+                      alt="Chevronleft9013"
+                      class="home-page-chevronleft3"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="home-page-group78">
+                <img
+                  src="public/external/vector89013-1ntl.svg"
+                  alt="Vector89013"
+                  class="home-page-vector81"
+                />
+                <span class="home-page-text145"><span>NEW ARRIVALS</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="home-page-banner">
+            <img
+              src="public/external/rectangle249014-uelr-700h.png"
+              alt="Rectangle249014"
+              class="home-page-rectangle24"
+            />
+            <div class="home-page-group18">
+              <div class="home-page-group17">
+                <img
+                  src="public/external/clothing9014-5ap-700h.png"
+                  alt="Clothing9014"
+                  class="home-page-clothing1"
+                />
+                <img
+                  src="public/external/clothing9015-sgso-700h.png"
+                  alt="Clothing9015"
+                  class="home-page-clothing2"
+                />
+              </div>
+              <div class="home-page-frame201"></div>
+            </div>
+          </div>
+          <img
+            src="public/external/image139015-3y0o-900w.png"
+            alt="image139015"
+            class="home-page-image13"
+          />
+          <div class="home-page-community">
+            <div class="home-page-group64">
+              <span class="home-page-text147">
+                <span>JOIN the COMMUNITY to get MONTHLY PROMO</span>
+              </span>
+              <span class="home-page-text149">
+                <span>
+                  Type your email down below and be young wild generation
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="home-page-textfield">
+            <button class="home-page-button">
+              <span class="home-page-text151 SingleLineBodyBase">
+                <span id="send">Send</span>
+              </span>
+            </button>
+            <span class="home-page-text153">
+              <input type="text" placeholder= "Your email address" class="email">
+            </span>
+          </div>
+          <div class="home-page-footer">
+            <div class="home-page-group66">
+              <div class="home-page-frame19">
+                <div class="home-page-group14">
+                  <span class="home-page-text155"><span>Careers</span></span>
+                  <span class="home-page-text157"><span>Contact us</span></span>
+                  <span class="home-page-text159"><span>Support</span></span>
+                  <span class="home-page-text161"><span>Company</span></span>
+                  <span class="home-page-text163"><span>About</span></span>
+                </div>
+                <div class="home-page-group15">
+                  <span class="home-page-text165"><span>Quick Link</span></span>
+                  <span class="home-page-text167"><span>FAQs</span></span>
+                  <span class="home-page-text169"><span>Size Guide</span></span>
+                  <span class="home-page-text171">
+                    <span>Orders Tracking</span>
+                  </span>
+                  <span class="home-page-text173">
+                    <span>Share Location</span>
+                  </span>
+                </div>
+                <div class="home-page-group16">
+                  <span class="home-page-text175">
+                    <span>Privacy Policy</span>
+                  </span>
+                  <span class="home-page-text177">
+                    <span>Terms &amp; conditions</span>
+                  </span>
+                  <span class="home-page-text179"><span>Legal</span></span>
+                </div>
+              </div>
+              <div class="home-page-frame45">
+                <div class="home-page-logo2">
+                  <span class="home-page-text181">
+                    <span>Freedom</span>
+                    <br />
+                    <span>Threads</span>
+                  </span>
+                </div>
+                <div class="home-page-frame18">
+                  <div class="home-page-group10">
+                    <img
+                      src="public/external/vector9015-kd2u.svg"
+                      alt="Vector9015"
+                      class="home-page-vector1"
+                    />
+                  </div>
+                  <div class="home-page-group11">
+                    <img
+                      src="public/external/vector9015-sgg.svg"
+                      alt="Vector9015"
+                      class="home-page-vector2"
+                    />
+                  </div>
+                  <div class="home-page-group12">
+                    <img
+                      src="public/external/vector9015-mot9c.svg"
+                      alt="Vector9015"
+                      class="home-page-vector3"
+                    />
+                  </div>
+                  <div class="home-page-group13">
+                    <span class="home-page-text185"><span>in</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-page-group5797">
+            <div class="home-page-frame71261">
+              <span class="home-page-text187">SALE</span>
+            </div>
+            <div class="home-page-frame71271">
+              <span class="home-page-text188">UPTO 20% OFF</span>
+            </div>
+            <div class="home-page-frame202">
+              <span class="home-page-text189">
+                <span>18 Aug - 20 Aug 2021</span>
+              </span>
+              <span class="home-page-text191">
+                <span>*Terms &amp; Conditions apply</span>
+              </span>
+            </div>
+          </div>
+          <div class="banner">
+          <div class="home-page-frame71262">
+            <div class="scroll-container">
+            <div class="home-page-product-info-card13">
+              <div class="home-page-image14"></div>
+              <div class="home-page-body13">
+                <div class="home-page-frame712413">
+                  <div class="home-page-text195">
+                    <span class="home-page-text196"><span>Top-wear</span></span>
+                  </div>
+                </div>
+                <a href="men.html"><img
+                  src="public/external/chevronleft9674-kxm.svg"
+                  alt="Chevronleft9674"
+                  class="home-page-chevronleft6"
+                /></a>
+              </div>
+            </div>
+            <div class="home-page-product-info-card14">
+              <div class="home-page-image15"></div>
+              <div class="home-page-body14">
+                <div class="home-page-frame712414">
+                  <div class="home-page-text198">
+                    <span class="home-page-text199">
+                      <span>Bottom-wear</span>
+                    </span>
+                  </div>
+                </div>
+                <a href="men.html"><img
+                  src="public/external/chevronleft9674-kxm.svg"
+                  alt="Chevronleft9674"
+                  class="home-page-chevronleft6"
+                /></a>
+              </div>
+            </div>
+            <div class="home-page-product-info-card15">
+              <div class="home-page-image16"></div>
+              <div class="home-page-body15">
+                <div class="home-page-frame712415">
+                  <div class="home-page-text201">
+                    <span class="home-page-text202"><span>Footwear</span></span>
+                  </div>
+                </div>
+                <a href="men.html"><img
+                  src="public/external/chevronleft9674-kxm.svg"
+                  alt="Chevronleft9674"
+                  class="home-page-chevronleft6"
+                /></a>
+              </div>
+            </div>
+            <div class="home-page-product-info-card16">
+              <div class="home-page-image17"></div>
+              <div class="home-page-body16">
+                <div class="home-page-frame712416">
+                  <div class="home-page-text204">
+                    <span class="home-page-text205">
+                      <span>Accessories</span>
+                    </span>
+                  </div>
+                </div>
+                <a href="men.html"><img
+                  src="public/external/chevronleft9674-kxm.svg"
+                  alt="Chevronleft9674"
+                  class="home-page-chevronleft6"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+          <div class="home-page-frame71272">
+            <div class="scroll-container">
+            <div class="home-page-product-info-card17">
+              <div class="home-page-image18"></div>
+              <div class="home-page-body17">
+                <div class="home-page-frame712417">
+                  <div class="home-page-text207">
+                    <span class="home-page-text208"><span>Top-wear</span></span>
+                  </div>
+                </div>
+                <a href="women.html"><img
+                  src="public/external/chevronleft9674-kxm.svg"
+                  alt="Chevronleft9674"
+                  class="home-page-chevronleft6"
+                /></a>
+              </div>
+            </div>
+            <div class="home-page-product-info-card18">
+              <div class="home-page-image19"></div>
+              <div class="home-page-body18">
+                <div class="home-page-frame712418">
+                  <div class="home-page-text210">
+                    <span class="home-page-text211">
+                      <span>Bottom-wear</span>
+                    </span>
+                  </div>
+                </div>
+                <a href="women.html"><img
+                  src="public/external/chevronleft9675-vslw.svg"
+                  alt="Chevronleft9675"
+                  class="home-page-chevronleft7"
+                /></a>
+              </div>
+            </div>
+            <div class="home-page-product-info-card19">
+              <div class="home-page-image20"></div>
+              <div class="home-page-body19">
+                <div class="home-page-frame712419">
+                  <div class="home-page-text213">
+                    <span class="home-page-text214"><span>Footwear</span></span>
+                  </div>
+                </div>
+                <a href="women.html"><img
+                  src="public/external/chevronleft9674-kxm.svg"
+                  alt="Chevronleft9674"
+                  class="home-page-chevronleft6"
+                /></a>
+              </div>
+            </div>
+            <div class="home-page-product-info-card20">
+              <div class="home-page-image21"></div>
+              <div class="home-page-body20">
+                <div class="home-page-frame712420">
+                  <div class="home-page-text216">
+                    <span class="home-page-text217">
+                      <span>Accessories</span>
+                    </span>
+                  </div>
+                </div>
+                <a href="women.html"><img
+                  src="public/external/chevronleft9674-kxm.svg"
+                  alt="Chevronleft9674"
+                  class="home-page-chevronleft6"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <div class="home-page-group5798">
+            <img
+              src="public/external/vector89677-salu.svg"
+              alt="Vector89677"
+              class="home-page-vector82"
+            />
+            <span class="home-page-text219"><span>Men’s Collection</span></span>
+          </div>
+          <div class="home-page-group5799">
+            <img
+              src="public/external/vector89677-2dk.svg"
+              alt="Vector89677"
+              class="home-page-vector83"
+            />
+            <span class="home-page-text221">
+              <span>Women’s Collection</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll('.home-page-chevronleft4, .home-page-chevronleft5').forEach(button => {
+    button.addEventListener('click', (event) => {
+        event.preventDefault();
+        document.querySelector('.scroll-container').scrollBy({
+            left: 200, // Adjust scroll distance
+            behavior: 'smooth'
+        });
+    });
+});
+
+const scrollContainer = document.querySelector('.scroll-container');
+const scrollLeftButton = document.createElement('button');
+scrollLeftButton.classList.add('scroll-button', 'left');
+scrollLeftButton.innerHTML = '←';
+scrollContainer.parentElement.appendChild(scrollLeftButton);
+
+const scrollRightButton = document.createElement('button');
+scrollRightButton.classList.add('scroll-button', 'right');
+scrollRightButton.innerHTML = '→';
+scrollContainer.parentElement.appendChild(scrollRightButton);
+
+scrollLeftButton.addEventListener('click', () => {
+    scrollContainer.scrollBy({
+        left: -200, // Adjust scroll distance
+        behavior: 'smooth'
+    });
+});
+
+scrollRightButton.addEventListener('click', () => {
+    scrollContainer.scrollBy({
+        left: 200, // Adjust scroll distance
+        behavior: 'smooth'
+    });
+});
+
+document.getElementById('send').addEventListener('click', function() {
+    this.textContent = 'Sent';
+});
+    </script>
+  </body>
+</html>

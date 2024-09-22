@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Freedom Threads</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="orders-container">
+        <div class="orders-orders">
+          <div class="orders-frame7115">
+            <div class="orders-header">
+              <div class="orders-logo1">
+                <span class="orders-text10">
+                  <span>Freedom</span>
+                  <br />
+                  <span>Threads</span>
+                </span>
+              </div>
+              <div class="orders-navigation-pill-list">
+                <span class="shop-text104"><a href="men.html"><span>Men</span></a></span>
+                <span class="shop-text106"><a href="women.html"><span>Women</span></a></span>
+                <span class="shop-text107"><a href="orders.html"><span>Orders</span></a></span>
+              </div>
+              <div class="orders-frame7129">
+                <a href="wishlist.html"><img
+                  src="public/external/heart9016-cjrv.svg"
+                  alt="Heart9016"
+                  class="home-page-heart"
+                /></a>
+                <a href="cart.html"><img
+                  src="public/external/shoppingbag9016-bm4t.svg"
+                  alt="Shoppingbag9016"
+                  class="home-page-shoppingbag"
+                /></a>
+                <a href="profile.html"><img
+                  src="public/external/user9016-02ms.svg"
+                  alt="User9016"
+                  class="home-page-user"
+                /></a>
+              </div>
+            </div>
+            <div class="orders-footer">
+              <div class="orders-group66">
+                <div class="orders-frame19">
+                  <div class="orders-group14">
+                    <span class="orders-text20"><span>Careers</span></span>
+                    <span class="orders-text22"><span>Contact us</span></span>
+                    <span class="orders-text24"><span>Support</span></span>
+                    <span class="orders-text26"><span>Company</span></span>
+                    <span class="orders-text28"><span>About</span></span>
+                  </div>
+                  <div class="orders-group15">
+                    <span class="orders-text30"><span>Quick Link</span></span>
+                    <span class="orders-text32"><span>FAQs</span></span>
+                    <span class="orders-text34"><span>Size Guide</span></span>
+                    <span class="orders-text36">
+                      <span>Orders Tracking</span>
+                    </span>
+                    <span class="orders-text38">
+                      <span>Share Location</span>
+                    </span>
+                  </div>
+                  <div class="orders-group16">
+                    <span class="orders-text40">
+                      <span>Privacy Policy</span>
+                    </span>
+                    <span class="orders-text42">
+                      <span>Terms &amp; conditions</span>
+                    </span>
+                    <span class="orders-text44"><span>Legal</span></span>
+                  </div>
+                </div>
+                <div class="orders-frame45">
+                  <div class="orders-logo2">
+                    <span class="orders-text46">
+                      <span>Freedom</span>
+                      <br />
+                      <span>Threads</span>
+                    </span>
+                  </div>
+                  <div class="orders-frame18">
+                    <div class="orders-group10">
+                      <img
+                        src="public/external/vector1603-jkl.svg"
+                        alt="Vector1603"
+                        class="orders-vector1"
+                      />
+                    </div>
+                    <div class="orders-group11">
+                      <img
+                        src="public/external/vector1603-a4hi.svg"
+                        alt="Vector1603"
+                        class="orders-vector2"
+                      />
+                    </div>
+                    <div class="orders-group12">
+                      <img
+                        src="public/external/vector1603-8g1k.svg"
+                        alt="Vector1603"
+                        class="orders-vector3"
+                      />
+                    </div>
+                    <div class="orders-group13">
+                      <span class="orders-text50"><span>in</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="orders-community">
+              <div class="orders-group64">
+                <span class="orders-text52">
+                  <span>JOIN the COMMUNITY to get MONTHLY PROMO</span>
+                </span>
+                <span class="orders-text54">
+                  <span>
+                    Type your email down below and be young wild generation
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="orders-textfield">
+              <button class="orders-button1">
+                <span class="orders-text56 SingleLineBodyBase">
+                  <span>Send</span>
+                </span>
+              </button>
+              <span class="orders-text58"><span>Your email address</span></span>
+            </div>
+            <div class="orders-all-orders">
+              <div class="orders-frame1">
+                <div class="orders-group427319082">
+                  <img
+                    src="public/external/kindpng37518621621-7o8c-200w.png"
+                    alt="kindpng37518621621"
+                    class="orders-kindpng3751862"
+                  />
+                </div>
+                <button class="orders-button2">
+                  <span class="orders-text60 CaptionRegular">
+                    <span>Delivered</span>
+                  </span>
+                </button>
+                <span class="orders-text62">
+                  <span>Your product has been delivered</span>
+                </span>
+                <img
+                  src="public/external/rectangle346241931621-1i09-200h.png"
+                  alt="Rectangle346241931621"
+                  class="orders-rectangle346241931"
+                />
+                <span class="orders-text64">
+                  <span>Girls Pink Moana Printed Dress</span>
+                </span>
+                <span class="orders-text66"><span>Qyt: 1</span></span>
+                <span class="orders-text68 Body-1Bold">
+                  <span>₹350.00</span>
+                </span>
+                <span class="orders-text70"><span>Size: S</span></span>
+                <div class="orders-frame10000010751"></div>
+              </div>
+              <div class="orders-frame2">
+                <div class="orders-group427319086">
+                  <img
+                    src="public/external/kindpng479402311621-5pg-200w.png"
+                    alt="kindpng479402311621"
+                    class="orders-kindpng47940231"
+                  />
+                </div>
+                <button class="orders-button3">
+                  <span class="orders-text72 CaptionRegular">
+                    <span>In Process</span>
+                  </span>
+                </button>
+                <span class="orders-text74">
+                  <span>Your product has been Inprocess</span>
+                </span>
+                <img
+                  src="public/external/rectangle346241931621-5axa-200h.png"
+                  alt="Rectangle346241931621"
+                  class="orders-rectangle346241932"
+                />
+                <span class="orders-text76">
+                  <span>Linen Tshirt</span>
+                </span>
+                <span class="orders-text78"><span>Qyt: 1</span></span>
+                <span class="orders-text80 Body-1Bold">
+                  <span>₹250.00</span>
+                </span>
+                <span class="orders-text82"><span>Size: Medium</span></span>
+                <div class="orders-frame10000010752">
+                  <button class="orders-button4">
+                    <span class="orders-text84 Paragraph2-Regular">
+                      <span>Cancel Order</span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <span class="orders-text86"><span>My Orders</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

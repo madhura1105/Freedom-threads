@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Freedom Threads</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="profile-container">
+        <div class="profile-profile">
+          <div class="profile-frame7115">
+            <div class="profile-header">
+              <div class="profile-logo1">
+                <span class="profile-text10">
+                  <span>Freedom</span>
+                  <br />
+                  <span>Threads</span>
+                </span>
+              </div>
+              <div class="profile-navigation-pill-list">
+                <span class="shop-text104"><a href="men.html"><span>Men</span></a></span>
+                <span class="shop-text106"><a href="women.html"><span>Women</span></a></span>
+                <span class="shop-text107"><a href="orders.html"><span>Orders</span></a></span>
+              </div>
+              <div class="profile-frame7129">
+                <a href="wishlist.html"><img
+                  src="public/external/heart9016-cjrv.svg"
+                  alt="Heart9016"
+                  class="home-page-heart"
+                /></a>
+                <a href="cart.html"><img
+                  src="public/external/shoppingbag9016-bm4t.svg"
+                  alt="Shoppingbag9016"
+                  class="home-page-shoppingbag"
+                /></a>
+                <a href="profile.html"><img
+                  src="public/external/user9016-02ms.svg"
+                  alt="User9016"
+                  class="home-page-user"
+                /></a>
+              </div>
+            </div>
+            <div class="profile-footer">
+              <div class="profile-group66">
+                <div class="profile-frame19">
+                  <div class="profile-group14">
+                    <span class="profile-text20"><span>Careers</span></span>
+                    <span class="profile-text22"><span>Contact us</span></span>
+                    <span class="profile-text24"><span>Support</span></span>
+                    <span class="profile-text26"><span>Company</span></span>
+                    <span class="profile-text28"><span>About</span></span>
+                  </div>
+                  <div class="profile-group15">
+                    <span class="profile-text30"><span>Quick Link</span></span>
+                    <span class="profile-text32"><span>FAQs</span></span>
+                    <span class="profile-text34"><span>Size Guide</span></span>
+                    <span class="profile-text36">
+                      <span>Orders Tracking</span>
+                    </span>
+                    <span class="profile-text38">
+                      <span>Share Location</span>
+                    </span>
+                  </div>
+                  <div class="profile-group16">
+                    <span class="profile-text40">
+                      <span>Privacy Policy</span>
+                    </span>
+                    <span class="profile-text42">
+                      <span>Terms &amp; conditions</span>
+                    </span>
+                    <span class="profile-text44"><span>Legal</span></span>
+                  </div>
+                </div>
+                <div class="profile-frame45">
+                  <div class="profile-logo2">
+                    <span class="profile-text46">
+                      <span>Freedom</span>
+                      <br />
+                      <span>Threads</span>
+                    </span>
+                  </div>
+                  <div class="profile-frame18">
+                    <div class="profile-group10">
+                      <img
+                        src="public/external/vector1607-ypn3.svg"
+                        alt="Vector1607"
+                        class="profile-vector1"
+                      />
+                    </div>
+                    <div class="profile-group11">
+                      <img
+                        src="public/external/vector1608-a6ua.svg"
+                        alt="Vector1608"
+                        class="profile-vector2"
+                      />
+                    </div>
+                    <div class="profile-group12">
+                      <img
+                        src="public/external/vector1608-p34.svg"
+                        alt="Vector1608"
+                        class="profile-vector3"
+                      />
+                    </div>
+                    <div class="profile-group13">
+                      <span class="profile-text50"><span>in</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile-side-menu">
+              <div class="profile-all-details">
+                <div class="profile-personal-information">
+                  <div class="profile-frame1000001077">
+                    <div class="profile-hugeiconuseroutlineuser">
+                      <img
+                        src="public/external/ellipse255i162-11tp-200h.png"
+                        alt="Ellipse255I162"
+                        class="profile-ellipse255"
+                      />
+                      <img
+                        src="public/external/ellipse257i162-t6w3-200h.png"
+                        alt="Ellipse257I162"
+                        class="profile-ellipse257"
+                      />
+                    </div>
+                    <span class="profile-text52 Body-1Regular">
+                      <a href="profile.html"><span>Profile</span></a>
+                    </span>
+                  </div>
+                </div>
+                <div class="profile-my-orders1">
+                  <div class="profile-frame10000010801">
+                    <img
+                      src="public/external/hugeiconshippinganddeliveryoutlinepackagebox071621-i3y.svg"
+                      alt="hugeiconshippinganddeliveryoutlinepackagebox071621"
+                      class="profile-hugeiconshippinganddeliveryoutlinepackagebox07"
+                    />
+                    <span class="profile-text54 Body-1Regular">
+                      <a href="orders.html"><span>My Orders</span></a>
+                    </span>
+                  </div>
+                </div>
+                <div class="profile-my-orders2">
+                  <div class="profile-frame10000010802">
+                    <img
+                      src="public/external/hugeiconhealthoutlineheart1621-tiur.svg"
+                      alt="hugeiconhealthoutlineheart1621"
+                      class="profile-hugeiconhealthoutlineheart"
+                    />
+                    <span class="profile-text56 Body-1Regular">
+                      <a href="wishlist.html"><span>My Wishlists</span></a>
+                    </span>
+                  </div>
+                </div>
+                <div class="profile-settings">
+                  <div class="profile-frame1000001082">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile-community">
+              <div class="profile-group64">
+                <span class="profile-text60">
+                  <span>JOIN the COMMUNITY to get MONTHLY PROMO</span>
+                </span>
+                <span class="profile-text62">
+                  <span>
+                    Type your email down below and be young wild generation
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="profile-textfield10">
+              <button class="profile-button">
+                <span class="profile-text64 SingleLineBodyBase">
+                  <span>Send</span>
+                </span>
+              </button>
+              <span class="profile-text66">
+                <span>Your email address</span>
+              </span>
+            </div>
+            <div class="profile-frame299">
+              <div class="profile-frame229">
+                <div class="profile-textfield11">
+                  <div class="profile-frame2431">
+                    <span class="profile-text68"><span>Full name</span></span>
+                  </div>
+                  <div class="profile-textfield12"><input type="text" class="text"></div>
+                </div>
+              </div>
+              <div class="profile-textfield13">
+                <div class="profile-frame2432">
+                  <span class="profile-text70"><span>Email</span></span>
+                  <div class="profile-passwordhidesee1">
+                    <div class="profile-icon1">
+                      <div class="profile-group17"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-textfield14"><input type="text" class="text"></div>
+              </div>
+              <div class="profile-textfield15">
+                <div class="profile-frame2433">
+                  <span class="profile-text72"><span>Phone Number</span></span>
+                  <div class="profile-passwordhidesee2">
+                    <div class="profile-icon2">
+                      <div class="profile-group18"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-textfield16"><input type="text" class="text"></div>
+              </div>
+              <div class="profile-email">
+                <div class="profile-frame2434">
+                  <span class="profile-text74"><span>Date of Birth</span></span>
+                </div>
+                <div class="profile-textfield17"><input type="text" class="text">
+                </div>
+              </div>
+            </div>
+            <div class="profile-frame7103">
+              <div class="profile-frame7095">
+                <div class="profile-group5792">
+                  <a href="home.html"><span class="profile-text76"><span>Submit</span></span></a>
+                </div>
+              </div>
+            </div>
+            <span class="profile-text78"><span>Profile</span></span>
+          </div>
+          <div class="profile-frame297">
+              <div class="profile-textfield20">
+                <div class="profile-frame2436">
+                  <span class="profile-text82"><span>Gender</span></span>
+                  <div class="profile-passwordhidesee4">
+                    <div class="profile-icon4">
+                      <div class="profile-group110"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-textfield21"><input type="text" class="text"></div>
+              </div>
+            <div class="profile-textfield20">
+              <div class="profile-frame2436">
+                <span class="profile-text82"><span>Address</span></span>
+                <div class="profile-passwordhidesee4">
+                  <div class="profile-icon4">
+                    <div class="profile-group110"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-textfield21"><input type="text" class="text"></div>
+            </div>
+            <div class="profile-frame230">
+              <div class="profile-textfield22">
+                <div class="profile-frame2437">
+                  <span class="profile-text84"><span>City</span></span>
+                </div>
+                <div class="profile-textfield23"><input type="text" class="text"></div>
+              </div>
+              <div class="profile-textfield24">
+                <div class="profile-frame2438">
+                  <span class="profile-text86"><span>State</span></span>
+                </div>
+                <div class="profile-textfield25"><input type="text" class="text"></div>
+              </div>
+            </div>
+            <div class="profile-textfield26">
+              <div class="profile-frame2439">
+                <span class="profile-text88"><span>Pincode</span></span>
+                <div class="profile-passwordhidesee5">
+                  <div class="profile-icon5">
+                    <div class="profile-group111"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-textfield27"><input type="text" class="text"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

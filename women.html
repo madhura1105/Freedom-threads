@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Freedom Threads</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="shop-container">
+        <div class="shop-shop">
+          <div class="shop-frame7115">
+            <div class="shop-header">
+              <div class="shop-logo1">
+                <span class="shop-text100">
+                  <span>Freedom</span>
+                  <br />
+                  <span>Threads</span>
+                </span>
+              </div>
+              <div class="shop-navigation-pill-list">
+                <span class="shop-text104"><a href="men.html"><span>Men</span></a></span>
+                <span class="shop-text106"><a href="women.html"><span>Women</span></a></span>
+                <span class="shop-text107"><a href="orders.html"><span>Orders</span></a></span>
+              </div>
+              <div class="shop-frame7122">
+                <div class="shop-search1">
+                  <span class="shop-text109 SingleLineBodyBase">
+                    <input type="text" id="search_product_by_name" placeholder="Search">
+                  </span>
+                  <img
+                    src="public/external/searchi109-mjiq.svg"
+                    alt="SearchI109"
+                    class="shop-search2"
+                  />
+                </div>
+              </div>
+              <div class="shop-frame7129">
+                <a href="wishlist.html"><img
+                  src="public/external/heart9016-cjrv.svg"
+                  alt="Heart9016"
+                  class="home-page-heart"
+                /></a>
+                <a href="cart.html"><img
+                  src="public/external/shoppingbag9016-bm4t.svg"
+                  alt="Shoppingbag9016"
+                  class="home-page-shoppingbag"
+                /></a>
+                <a href="profile.html"><img
+                  src="public/external/user9016-02ms.svg"
+                  alt="User9016"
+                  class="home-page-user"
+                /></a>
+              </div>
+            </div>
+            <div class="shop-item-link1">
+              <span class="shop-text111"><span>XXL</span></span>
+            </div>
+            <div class="shop-divsfpcard1">
+              <div class="shop-linkresponsiveimage1">
+                <img
+                  src="public/external/image46145a4ab07b97409ab0493768fd0e7a10jpg1433-4l1-400w.png"
+                  alt="IMAGE46145a4ab07b97409ab0493768fd0e7a10jpg1433"
+                  class="shop-image46145a4ab07b97409ab0493768fd0e7a10jpg"
+                />
+                <div class="shop-spanprodtag1">
+                  <span class="shop-text113">
+                    <span>Sold</span>
+                    <br />
+                    <span>Out</span>
+                  </span>
+                </div>
+              </div>
+              <div class="shop-divmt31">
+                <div class="shop-heading3-link1">
+                  <span class="shop-text117">
+                    <span>Linen-blend Shirt</span>
+                  </span>
+                </div>
+                <div class="shop-divfpricesale1">
+                  <div class="shop-spanfpriceitem1">
+                    <span class="shop-text119"><span>₹350.00</span></span>
+                  </div>
+                  <div class="shop-strikethrough1">
+                    <span class="shop-text121"><span>₹450.00</span></span>
+                  </div>
+                </div>
+                <div class="shop-pcardswatchswatchcolor1">
+                  <div class="shop-divsftooltipitem10">
+                    <div class="shop-divproductoptionitem10"></div>
+                  </div>
+                  <div class="shop-divsftooltipitem11">
+                    <div class="shop-divproductoptionitem11"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shop-filter">
+            <span class="shop-text123"><span>Filters</span></span>
+            <div class="shop-filters-menu01">
+              <span class="shop-text125"><span>Size</span></span>
+              <div class="shop-item-link2">
+                <span class="shop-text127">S</span>
+              </div>
+              <div class="shop-item-link3">
+                <span class="shop-text128">M</span>
+              </div>
+              <div class="shop-item-link4">
+                <span class="shop-text129">L</span>
+              </div>
+              <div class="shop-item-link5">
+                <span class="shop-text130"><span>XL</span></span>
+              </div>
+            </div>
+            <div class="shop-filters-menu02">
+              <span class="shop-text132"><span>Colors</span></span>
+              <div class="shop-list">
+                <div class="shop-item10">
+                  <div class="shop-spantagfiltercolor10"></div>
+                </div>
+                <div class="shop-item11">
+                  <div class="shop-spantagfiltercolor11"></div>
+                </div>
+                <div class="shop-item12">
+                  <div class="shop-spantagfiltercolor12"></div>
+                </div>
+                <div class="shop-item13">
+                  <div class="shop-spantagfiltercolor13"></div>
+                </div>
+                <div class="shop-item14">
+                  <div class="shop-spantagfiltercolor14"></div>
+                </div>
+                <div class="shop-item15">
+                  <div class="shop-spantagfiltercolor15"></div>
+                </div>
+                <div class="shop-item16">
+                  <div class="shop-spantagfiltercolor16"></div>
+                </div>
+                <div class="shop-item17">
+                  <div class="shop-spantagfiltercolor17"></div>
+                </div>
+                <div class="shop-item18">
+                  <div class="shop-spantagfiltercolor18"></div>
+                </div>
+                <div class="shop-item19">
+                  <div class="shop-spantagfiltercolor19"></div>
+                </div>
+                <div class="shop-item20">
+                  <div class="shop-spantagfiltercolor20"></div>
+                </div>
+                <div class="shop-item21">
+                  <div class="shop-spantagfiltercolor21"></div>
+                </div>
+                <div class="shop-item22">
+                  <div class="shop-spantagfiltercolor22"></div>
+                </div>
+                <div class="shop-item23">
+                  <div class="shop-spantagfiltercolor23"></div>
+                </div>
+              </div>
+            </div>
+            <div class="shop-filters-menu03">
+              <span class="shop-text134"><span>Prices</span></span>
+              <span class="shop-text136"><span>₹150.00-₹250.00</span></span>
+              <span class="shop-text138"><span>₹250.00-₹350.00</span></span>
+              <span class="shop-text140"><span>₹350.00-₹450.00</span></span>
+              <span class="shop-text142"><span>₹450.00-₹500.00</span></span>
+              <span class="shop-text144"><span>₹500.00-₹1000.00</span></span>
+            </div>
+            <div class="shop-filter-menu05">
+              <span class="shop-text146"><span>Collections</span></span>
+              <span class="shop-text148"><span>All products</span></span>
+              <span class="shop-text150"><span>Best sellers</span></span>
+              <span class="shop-text152"><span>New arrivals</span></span>
+              <span class="shop-text154"><span>Accessories</span></span>
+            </div>
+          </div>
+          <div class="shop-products">
+            <div class="shop-product01">
+              <div class="shop-divsfpcard2">
+                <div class="shop-linkresponsiveimage2">
+                  <img
+                    src="public/external/image49ecfb9d65a39240b1b9fbf62e5a84f812jpg1433-gx7-400w.png"
+                    alt="IMAGE49ecfb9d65a39240b1b9fbf62e5a84f812jpg1433"
+                    class="shop-image49ecfb9d65a39240b1b9fbf62e5a84f812jpg"
+                  />
+                  <img
+                    src="public/external/basickhakitshirt1463-pvcf-700h.png"
+                    alt="Basickhakitshirt1463"
+                    class="shop-basickhakitshirt"
+                  />
+                </div>
+                <div class="shop-divmt32">
+                  <div class="shop-heading3-link2">
+                    <span class="shop-text156">
+                      <span>Linen Plain Top</span>
+                    </span>
+                  </div>
+                  <span class="shop-text158"><span>₹250.00</span></span>
+                  <div class="shop-pcardswatchswatchcolor2">
+                    <div class="shop-divsftooltipitem12">
+                      <div class="shop-divproductoptionitem12"></div>
+                    </div>
+                    <div class="shop-divsftooltipitem13">
+                      <div class="shop-divproductoptionitem13"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop-product02">
+              <div class="shop-divsfpcard3">
+                <div class="shop-divoverflowhidden">
+                  <div class="shop-linkresponsiveimage3">
+                    <img
+                      src="public/external/image57jpg1433-3e0o-400w.png"
+                      alt="IMAGE57jpg1433"
+                      class="shop-image57jpg"
+                    />
+                  </div>
+                  <div class="shop-spanprodtag2">
+                    <span class="shop-text160">
+                      <span>Sold</span>
+                      <br />
+                      <span>Out</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="shop-divmt33">
+                  <div class="shop-heading3-link3">
+                    <span class="shop-text164">
+                      <span>Linen Shirt</span>
+                    </span>
+                  </div>
+                  <span class="shop-text166"><span>₹350.00</span></span>
+                  <div class="shop-pcardswatchswatchcolor3">
+                    <div class="shop-divsftooltipitem14">
+                      <div class="shop-divproductoptionitem14"></div>
+                    </div>
+                    <div class="shop-divsftooltipitem15">
+                      <div class="shop-divproductoptionitem15"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop-product03">
+              <div class="shop-divsfpcard4">
+                <div class="shop-linkresponsiveimage4">
+                  <a href="item-details.html"><img
+                    src="public/external/basicwardrobeessentials1463-rn9v-700h.png"
+                    alt="Basicwardrobeessentials1463"
+                    class="shop-basicwardrobeessentials1"
+                  /></a>
+                </div>
+                <div class="shop-divmt34">
+                  <div class="shop-heading3-link4">
+                    <span class="shop-text168">
+                      <span>Linen Plain Top</span>
+                    </span>
+                  </div>
+                  <span class="shop-text170"><span>₹250.00</span></span>
+                  <div class="shop-pcardswatchswatchcolor4">
+                    <div class="shop-divsftooltipitem16">
+                      <div class="shop-divproductoptionitem16"></div>
+                    </div>
+                    <div class="shop-divsftooltipitem17">
+                      <div class="shop-divproductoptionitem17"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop-product04">
+              <div class="shop-divsfpcard5">
+                <div class="shop-linkresponsiveimage5">
+                  <img
+                    src="public/external/image548558553ca9dd4474bc2b6707343dacbejpg1433-3url-400w.png"
+                    alt="IMAGE548558553ca9dd4474bc2b6707343dacbejpg1433"
+                    class="shop-image548558553ca9dd4474bc2b6707343dacbejpg"
+                  />
+                  <img
+                    src="public/external/basicisalwaysintrend1463-2npp-700h.png"
+                    alt="Basicisalwaysintrend1463"
+                    class="shop-basicisalwaysintrend"
+                  />
+                </div>
+                <div class="shop-divmt35">
+                  <div class="shop-heading3-link5">
+                    <span class="shop-text172">
+                      <span>Linen Plain Top</span>
+                    </span>
+                  </div>
+                  <span class="shop-text174"><span>₹250.00</span></span>
+                  <div class="shop-pcardswatchswatchcolor5">
+                    <div class="shop-divsftooltipitem18">
+                      <div class="shop-divproductoptionitem18"></div>
+                    </div>
+                    <div class="shop-divsftooltipitem19">
+                      <div class="shop-divproductoptionitem19"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop-product05">
+              <div class="shop-divsfpcard6">
+                <div class="shop-linkresponsiveimage6">
+                  <img
+                    src="public/external/image53bc12317de94140979fd8cc529c2b0cf1jpg1433-hfao-400w.png"
+                    alt="IMAGE53bc12317de94140979fd8cc529c2b0cf1jpg1433"
+                    class="shop-image53bc12317de94140979fd8cc529c2b0cf1jpg"
+                  />
+                  <img
+                    src="public/external/basicclothes1463-3mnd-700h.png"
+                    alt="Basicclothes1463"
+                    class="shop-basicclothes"
+                  />
+                </div>
+                <div class="shop-divmt36">
+                  <div class="shop-heading3-link6">
+                    <span class="shop-text176">
+                      <span>Linen Plain Top</span>
+                    </span>
+                  </div>
+                  <span class="shop-text178"><span>₹250.00</span></span>
+                  <div class="shop-pcardswatchswatchcolor6">
+                    <div class="shop-divsftooltipitem20">
+                      <div class="shop-divproductoptionitem20"></div>
+                    </div>
+                    <div class="shop-divsftooltipitem21">
+                      <div class="shop-divproductoptionitem21"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop-product06">
+              <div class="shop-divsfpcard7">
+                <div class="shop-linkresponsiveimage7">
+                  <img
+                    src="public/external/image52bec0360d64e54b79bb889b2dc30f34a2jpg1433-kzv-400w.png"
+                    alt="IMAGE52bec0360d64e54b79bb889b2dc30f34a2jpg1433"
+                    class="shop-image52bec0360d64e54b79bb889b2dc30f34a2jpg"
+                  />
+                  <img
+                    src="public/external/basicwardrobeessentials1463-4kh-700h.png"
+                    alt="Basicwardrobeessentials1463"
+                    class="shop-basicwardrobeessentials2"
+                  />
+                </div>
+                <div class="shop-divmt37">
+                  <div class="shop-heading3-link7">
+                    <span class="shop-text180">
+                      <span>Oversized shirt</span>
+                    </span>
+                  </div>
+                  <div class="shop-divfpricesale2">
+                    <div class="shop-spanfpriceitem2">
+                      <span class="shop-text182"><span>₹250.00</span></span>
+                    </div>
+                    <div class="shop-strikethrough2">
+                      <span class="shop-text184"><span>₹350.00</span></span>
+                    </div>
+                  </div>
+                  <div class="shop-pcardswatchswatchcolor7">
+                    <div class="shop-divsftooltipitem22">
+                      <div class="shop-divproductoptionitem22"></div>
+                    </div>
+                    <div class="shop-divsftooltipitem23">
+                      <div class="shop-divproductoptionitem23"></div>
+                    </div>
+                    <div class="shop-divsftooltipitem24">
+                      <div class="shop-divproductoptionitem24"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop-product07"></div>
+            <div class="shop-product08">
+              <div class="shop-divsfpcard8">
+                <div class="shop-linkresponsiveimage8">
+                  <img
+                    src="public/external/image45jpg1433-qh7f-400w.png"
+                    alt="IMAGE45jpg1433"
+                    class="shop-image45jpg"
+                  />
+                  <img
+                    src="public/external/basicwardrobeessentials1463-jmzg-700h.png"
+                    alt="Basicwardrobeessentials1463"
+                    class="shop-basicwardrobeessentials3"
+                  />
+                </div>
+                <div class="shop-divmt38">
+                  <div class="shop-heading3-link8">
+                    <span class="shop-text186">
+                      <span>Oversized shirt</span>
+                    </span>
+                  </div>
+                  <span class="shop-text188"><span>₹250.00</span></span>
+                  <div class="shop-pcardswatchswatchcolor8">
+                    <div class="shop-divsftooltipitem25">
+                      <div class="shop-divproductoptionitem25"></div>
+                    </div>
+                    <div class="shop-divsftooltipitem26">
+                      <div class="shop-divproductoptionitem26"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop-product09">
+              <div class="shop-divsfpcard9">
+                <div class="shop-linkresponsiveimage9">
+                  <img
+                    src="public/external/image44df90161a71724fac869ac6af02c86d12jpg1433-1w9k-400w.png"
+                    alt="IMAGE44df90161a71724fac869ac6af02c86d12jpg1433"
+                    class="shop-image44df90161a71724fac869ac6af02c86d12jpg"
+                  />
+                </div>
+                <div class="shop-divmt39">
+                  <div class="shop-heading3-link9">
+                    <span class="shop-text190">
+                      <span>Dotted Black Dress</span>
+                    </span>
+                  </div>
+                  <span class="shop-text192"><span>₹450.00</span></span>
+                  <div class="shop-pcardswatchswatchcolor9">
+                    <div class="shop-divsftooltipitem27">
+                      <div class="shop-divproductoptionitem27"></div>
+                    </div>
+                    <div class="shop-divsftooltipitem28">
+                      <div class="shop-divproductoptionitem28"></div>
+                    </div>
+                    <div class="shop-divsftooltipitem29">
+                      <div class="shop-divproductoptionitem29"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shop-community">
+            <div class="shop-group64">
+              <span class="shop-text194">
+                <span>JOIN the COMMUNITY to get MONTHLY PROMO</span>
+              </span>
+              <span class="shop-text196">
+                <span>
+                  Type your email down below and be young wild generation
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="shop-textfield">
+            <button class="shop-button">
+              <span class="shop-text198"><span>Send</span></span>
+            </button>
+            <span class="shop-text200"><span>Your email address</span></span>
+          </div>
+        </div>
+        <div class="shop-footer">
+          <div class="shop-group66">
+            <div class="shop-frame19">
+              <div class="shop-group14">
+                <span class="shop-text202"><span>Careers</span></span>
+                <span class="shop-text204"><span>Contact us</span></span>
+                <span class="shop-text206"><span>Support</span></span>
+                <span class="shop-text208"><span>Company</span></span>
+                <span class="shop-text210"><span>About</span></span>
+              </div>
+              <div class="shop-group15">
+                <span class="shop-text212"><span>Quick Link</span></span>
+                <span class="shop-text214"><span>FAQs</span></span>
+                <span class="shop-text216"><span>Size Guide</span></span>
+                <span class="shop-text218"><span>Orders Tracking</span></span>
+                <span class="shop-text220"><span>Share Location</span></span>
+              </div>
+              <div class="shop-group16">
+                <span class="shop-text222"><span>Privacy Policy</span></span>
+                <span class="shop-text224">
+                  <span>Terms &amp; conditions</span>
+                </span>
+                <span class="shop-text226"><span>Legal</span></span>
+              </div>
+            </div>
+            <div class="shop-frame45">
+              <div class="shop-logo2">
+                <span class="shop-text228">
+                  <span>Freedom</span>
+                  <br />
+                  <span>Threads</span>
+                </span>
+              </div>
+              <div class="shop-frame18">
+                <div class="shop-group10">
+                  <img
+                    src="public/external/vector1433-3z3k.svg"
+                    alt="Vector1433"
+                    class="shop-vector1"
+                  />
+                </div>
+                <div class="shop-group11">
+                  <img
+                    src="public/external/vector1433-o7jc.svg"
+                    alt="Vector1433"
+                    class="shop-vector2"
+                  />
+                </div>
+                <div class="shop-group12">
+                  <img
+                    src="public/external/vector1433-3alp.svg"
+                    alt="Vector1433"
+                    class="shop-vector3"
+                  />
+                </div>
+                <div class="shop-group13">
+                  <span class="shop-text232"><span>in</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
